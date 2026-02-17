@@ -1,20 +1,33 @@
-<<<<<<< HEAD
-# React + Vite
+# React Project 08
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React application built using functional components and reusable UI structure.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Component based architecture  
+- Clean and responsive UI  
+- Reusable components  
+- Modern React practices  
+- Organized folder structure  
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React  
+- JavaScript ES6+  
+- CSS  
+- Vite or Create React App  
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# react-project_08
->>>>>>> 37de24593d7b00e9f70ee2ddf6895944484735bb
+## Project Structure
+```
+react-project-eight/
+│
+├── public/
+├── src/
+│ ├── Components/
+│ ├── App.jsx
+│ ├── App.css
+│ └── main.jsx
+│
+├── package.json
+└── README.md
+```
