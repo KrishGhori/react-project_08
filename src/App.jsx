@@ -1,87 +1,53 @@
-import { useState } from 'react'
-import { useEffect } from 'react'
-import './App.css'
-import LoggerComponent from './Components/LoggerComponents'
-import TimeComponents from './Components/TimeComponents'
-import DataFetcher from './Components/DataFetcher'
-import ResizeComponents from './Components/ResizeComponents'
-import MultiEffectComponents from './Components/MultiEffectComponents'
+import { useState } from "react";
+import "./App.css";
+import LoggerComponent from "./Components/LoggerComponents";
+import TimeComponents from "./Components/TimeComponents";
+import DataFetcher from "./Components/DataFetcher";
+import ResizeComponents from "./Components/ResizeComponents";
+import MultiEffectComponents from "./Components/MultiEffectComponents";
 
 function App() {
-
-  const [count , setcount] = useState(0);
-  const [total , setTotal] = useState(1);
- 
-// variation :1 
-// run on every render
-//  useEffect(() => {
-//    alert("i will run on each render");
-//  })
-
-// variation : 2 
-// run on only frist render
-// useEffect(() => {
-//   alert("i will run on only frist render");
-// }, [])
-
-// variation : 3
-// run evry time when count is updated
-// useEffect(() => {
-//   alert("i will run evry time when count is updated");
-// }, [count])
-
-
-// variation : 4
-// multiple depandances
-// useEffect(() => {
-//   alert("i will run evry time when count/total is updated");
-// }, [count,total])
-
-// variation : 5
-// clean-up funtion
-// useEffect(() => {
-//   alert("count is updated");
-
-//   return () =>  {
-//     alert("count is unmounted from the UI");
-//   }
-// }, [count])
-
-
-
- function handleclick(){
-  setcount(count+1);
- 
- }
-
- function handleTotal (){
-  setTotal(total+1)
- }
- 
+  const [count, setCount] = useState(0);
+  const [total, setTotal] = useState(1);
 
   return (
-   
-    <div>
+    <div className="app">
+      <h1 className="main-title">React useEffect Playground</h1>
 
-      <LoggerComponent />
+      <div className="card">
+        <LoggerComponent />
+      </div>
 
-      <TimeComponents />
+      <div className="card">
+        <TimeComponents />
+      </div>
 
-      <DataFetcher />
+      <div className="card">
+        <DataFetcher />
+      </div>
 
-      <ResizeComponents />
+      <div className="card">
+        <ResizeComponents />
+      </div>
 
-      <MultiEffectComponents />
+      <div className="card">
+        <MultiEffectComponents />
+      </div>
 
-      <button onClick={handleclick}>update count </button>
+      <div className="card counter-box">
+        <h2>Manual Counter Section</h2>
+        <button onClick={() => setCount(count + 1)} className="btn">
+          Update Count
+        </button>
+        <p>Count: {count}</p>
 
-      <p>count is {count}</p>
-      
-      <br />
-      <button onClick={handleTotal}>update Total </button>
-      <p>total is {total}</p>
+        <button onClick={() => setTotal(total + 1)} className="btn secondary">
+          Update Total
+        </button>
+        <p>Total: {total}</p>
+      </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

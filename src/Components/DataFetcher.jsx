@@ -20,21 +20,21 @@ const DataFetcher = () => {
     
     
 
-  return (
-    <div>
-      {loding ? (
-        <h1>loding...</h1>
-      ):(
-        <ul>
-            {
-                data.map(post => (
-                    <li key={post.id}>{post.title}</li>
-                ))
-            }
-        </ul>
-      )}
-    </div>
-  )
+return (
+  <div>
+    <h2>Data Fetcher</h2>
+    {loding ? (
+      <div className="loader"></div>
+    ) : (
+      <ul className="post-list">
+        {data.slice(0, 10).map((post) => (
+          <li key={post.id}>{post.title}</li>
+        ))}
+      </ul>
+    )}
+  </div>
+);
+
 }
 
 export default DataFetcher
