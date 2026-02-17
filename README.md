@@ -1,4 +1,4 @@
-# React useEffect Playground
+# React useEffect 
 
 A practical React project demonstrating different variations of the `useEffect` hook with clean UI styling and structured components.
 
