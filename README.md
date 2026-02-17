@@ -37,6 +37,69 @@ Each concept is separated into individual components for clarity.
 - CSS3
 - JSONPlaceholder API
 
+# React useEffect Deep Dive
+
+A structured React project focused on mastering the `useEffect` hook through practical component-based examples.
+
+---
+
+## Live Concepts Demonstrated
+
+This project demonstrates:
+
+- Effect running on every render
+- Effect running only on first render
+- Effect with dependency array
+- Multiple dependency handling
+- Cleanup functions
+- setInterval lifecycle management
+- Window resize event listener
+- API data fetching with loading state
+
+---
+
+## Components Overview
+
+### LoggerComponent
+Logs render behavior and dependency changes.
+
+### TimeComponents
+Implements a live timer using `setInterval` with proper cleanup.
+
+### DataFetcher
+Fetches data from JSONPlaceholder API and displays posts with a loading spinner.
+
+### ResizeComponents
+Tracks browser window width using event listeners and cleanup.
+
+### MultiEffectComponents
+Demonstrates multiple `useEffect` hooks inside a single component.
+
+---
+
+## UI Improvements
+
+- Card-based layout
+- Hover animations
+- Gradient dark theme
+- Styled buttons
+- CSS loading spinner
+- Structured spacing and alignment
+
+---
+
+## Tech Stack
+
+- React
+- JavaScript ES6+
+- CSS3
+- JSONPlaceholder API
+
+---
+
+## Folder Structure
+
+
 ---
 
 ## Project Structure
@@ -57,4 +120,8 @@ react-project-eight/
 │ └── main.jsx
 │
 ├── package.json
-└── README.md```
+└── README.md
+```
+## Author
+
+Krish Ghori
